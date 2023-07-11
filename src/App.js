@@ -1,14 +1,17 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import "./App.css";
-import { RuleGroup } from "./component/RuleGroup";
+import { CreateQuery } from "./component/CreateQuery";
 export const UserContext = createContext();
 function App() {
-  const [values, setValues] = useState([]);
-  const [valueObj, setValueObj] = useState({});
   return (
-    <UserContext.Provider value={{ values, setValues, valueObj, setValueObj }}>
-      <RuleGroup />
-    </UserContext.Provider>
+    <div className="card container rule-group mt-2">
+      <div className="card-body">
+        <div className="card-title">
+          <h3 className="text-center">React Conditional String generation</h3>
+        </div>
+        <CreateQuery />
+      </div>
+    </div>
   );
 }
 

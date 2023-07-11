@@ -1,3 +1,8 @@
-*{
-    font-family: 'Roboto', sans-serif;
+* {
+  font-family: "Roboto", sans-serif;
+}
+.rule-group {
+  background-color: rgb(237, 234, 234);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.14);
+  width: 50rem;
 }
